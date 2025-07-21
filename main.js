@@ -33,7 +33,7 @@ function displayMovieData(data) {
     let movieCard = document.createElement("div");
     movieCard.className = "movie-card";
     movieCard.innerHTML = `
-              <a href="https://www.themoviedb.org/movie/${item.id}" class="a-movie">
+              <a href="./pages/movieDetail.html&=${item.id}" class="a-movie">
                 <img src="https://image.tmdb.org/t/p/w500${item.poster_path}" alt="${item.title}">
                 <div class="movie-card-info">
                     <p class="title">${item.title}</p>
