@@ -1,3 +1,8 @@
+import NavBar from "./components/NavBar.js";
+
+const Header = document.getElementById('header')
+Header.appendChild(NavBar())
+
 // Your API Key from TMDb
 const API_KEY = "d5a6e25117f2c5cc1195399e3ea13eed";
 
@@ -34,7 +39,7 @@ function displayMovieData(data) {
     movieCard.className = "movie-card";
     movieCard.innerHTML = `
               <a href="./pages/movieDetail.html&=${item.id}" class="a-movie">
-                <img src="https://image.tmdb.org/t/p/w500${item.poster_path}" alt="${item.title}">
+                <img src="https://image.tmdb.org/t/p/w500${item.poster_path}" alt="${item.title}" class="movie-img">
                 <div class="movie-card-info">
                     <p class="title">${item.title}</p>
                 </div>
