@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+#header{
+    position: sticky;
+    top: 0;
+}
+
+
+
 #movie-section{
     width: 100%;
     display: flex;

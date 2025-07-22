@@ -4,11 +4,11 @@ function NavBar(){
     Nav.innerHTML = `
         <nav class="top-nav">
             <a href="#" id="logo">IMovies</a>
-            <div>
+            <div class="nav-list">
                 <a href="#">Home</a>
                 <a href="#">Movies</a>
                 <a href="#">Web Serise</a>
-                <a href="#">Contact</a>
+                <a href="#">Genre</a>
             </div>
             <div class="search-component-div">
                 <input type="text" id="search-input">
