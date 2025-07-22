@@ -9,8 +9,6 @@
     top: 0;
 }
 
-
-
 #movie-section{
     width: 100%;
     display: flex;
@@ -30,4 +28,32 @@
 
 .movie-img{
     width: 100%;
+}
+
+/* Paggination */
+
+.paggination-box{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.pages-btn{
+    width: 50px;
+    height: 50px;
+    font-size: 1.2rem;
+    background: none;
+    border: 1px solid #000;
+    border-radius: 10px;
+    box-shadow: 1px 2px 8px rgba(0,0,0,0.2),
+                inset 10px 10px 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+
+.pages-btn:hover{
+    background: #000;
+    color: #fff;
 }

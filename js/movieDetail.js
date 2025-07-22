@@ -23,6 +23,5 @@ function displayMovieData(data) {
     let backdropImg = document.createElement('img')
     backdropImg.className = 'back-drop-img'
     backdropImg.src = `https://image.tmdb.org/t/p/original${data.backdrop_path}`
-    // backdropImg.src= `${data.backdrop_path}`
     backDropContainer.appendChild(backdropImg)
 }
