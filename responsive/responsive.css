@@ -1,0 +1,27 @@
+@media screen and (max-width: 814px) {
+    .movie-card{
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .movie-card{
+        width: 23%;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .movie-card{
+        width: 48%;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    #movie-section{
+        gap: 0;
+    }
+    .movie-card{
+        width: 48%;
+        overflow: hidden;
+    }
+}
