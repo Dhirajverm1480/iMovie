@@ -68,6 +68,7 @@ function displayMovieData(data) {
 }
 
 const paginationDiv = document.getElementById("paggination-box");
+
 function renderPagination() {
   paginationDiv.innerHTML = "";
 
@@ -90,10 +91,10 @@ function renderPagination() {
     createButton("Prev", currentPage - 1, false, currentPage === 1)
   );
 
-  // Numbered Pages (max 5)
+  // Numbered Pages (max 10)
   let start = Math.max(1, currentPage - 2);
   let end = Math.min(totalPages, currentPage + 2);
-  if (currentPage <= 2) end = Math.min(5, totalPages);
+  if (currentPage <= 2) end = Math.min(10, totalPages);
   if (currentPage >= totalPages - 1) start = Math.max(1, totalPages - 4);
 
   for (let i = start; i <= end; i++) {

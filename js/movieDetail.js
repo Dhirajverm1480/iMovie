@@ -1,3 +1,8 @@
+import NavBar from "../components/NavBar.js";
+
+const Header = document.getElementById("header");
+Header.appendChild(NavBar());
+
 const param = new URLSearchParams(window.location.search);
 const movieId = param.get("id");
 console.log("MOvieId: ", movieId);

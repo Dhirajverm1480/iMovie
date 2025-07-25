@@ -5,10 +5,10 @@ function NavBar(){
         <nav class="top-nav">
             <a href="#" id="logo">IMovies</a>
             <div class="nav-list">
-                <a href="#">Home</a>
-                <a href="#">Movies</a>
-                <a href="#">Web Serise</a>
-                <a href="#">Genre</a>
+                <a href="#" class="navlist-a">Home</a>
+                <a href="#" class="navlist-a">Movies</a>
+                <a href="#" class="navlist-a">Web Serise</a>
+                <a href="#" class="navlist-a">Genre</a>
             </div>
             <div class="search-component-div">
                 <input type="text" id="search-input">
