@@ -24,9 +24,24 @@ async function fetchMovieById(movieId) {
 }
 
 function displayMovieData(data) {
-    const backDropContainer = document.getElementById("backdrop")
-    let backdropImg = document.createElement('img')
-    backdropImg.className = 'back-drop-img'
-    backdropImg.src = `https://image.tmdb.org/t/p/original${data.backdrop_path}`
-    backDropContainer.appendChild(backdropImg)
+  const backDropContainer = document.getElementById("backdrop");
+  let backdropImg = document.createElement("img");
+  backdropImg.className = "back-drop-img";
+  backdropImg.src = `https://image.tmdb.org/t/p/original${data.backdrop_path}`;
+  backDropContainer.appendChild(backdropImg);
+
+  const movieDetail = document.getElementById("movieDetail");
+  const movieInfo = document.createElement("div");
+  movieInfo.innerHTML = `
+      <div id="movie-div">
+                <div class="img-container">
+                    <img src="https://image.tmdb.org/t/p/w500${data.poster_path}" alt="">
+                </div>
+                <div class="movieInfo">
+                    <h2 class="title">${data.title}</h2>
+                    <p class="description"></p>
+                </div>
+            </div>
+    `;
+    movieDetail.appendChild(movieInfo)
 }
