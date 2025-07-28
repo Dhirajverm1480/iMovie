@@ -32,6 +32,7 @@ function displayMovieData(data) {
 
   const movieDetail = document.getElementById("movieDetail");
   const movieInfo = document.createElement("div");
+  movieInfo.classList.add('movie-info-overlay')
   movieInfo.innerHTML = `
       <div id="movie-div">
                 <div class="img-container">
